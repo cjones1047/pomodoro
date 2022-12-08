@@ -31,4 +31,10 @@ title = Label(text="Timer", font=(FONT_NAME, 40, "normal"))
 title.config(pady=10, fg=GREEN, bg=YELLOW)
 title.grid(column=1, row=0)
 
+start_button = Button(text="Start", highlightbackground=YELLOW)
+start_button.grid(column=0, row=2)
+
+reset_button = Button(text="Reset", highlightbackground=YELLOW)
+reset_button.grid(column=2, row=2)
+
 window.mainloop()
