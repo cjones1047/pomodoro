@@ -25,10 +25,13 @@ def start_timer():
     long_break_sec = LONG_BREAK_MIN * 60
 
     if reps % 8 == 0:
+        title.config(text="Take a Long Break", fg=RED)
         countdown(long_break_sec)
     elif reps % 2 == 0:
+        title.config(text="Take a Short Break", fg=PINK)
         countdown(short_break_sec)
     else:
+        title.config(text="Work", fg=GREEN)
         countdown(work_sec)
 
 
